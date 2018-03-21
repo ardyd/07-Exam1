@@ -99,8 +99,9 @@ def problem3(rect, n, window):
     height = rect.get_height()
     lower_right = rect.get_lower_right_corner()
     radius = height/2
-    change = height*math.cos(.7853981634)
-    # that number is equal to Pi/4 within 10 digits, which is 45 degrees in radians
+    pie = math.pi
+    change = height*math.cos(pie/4)
+
     rect.attach_to(window)
 
     for k in range(n):
